@@ -2,5 +2,18 @@ header {
   border-bottom: 1px solid #E5E5E5;
   height: 53.5px;
   background: white;
+  padding: 0 16px 0 31px;
+}
+
+.navigation {
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
