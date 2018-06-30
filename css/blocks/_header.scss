@@ -1,19 +1,104 @@
 header {
-  border-bottom: 1px solid #E5E5E5;
-  height: 53.5px;
-  background: white;
-  padding: 0 16px 0 31px;
+    border-bottom: 1px solid #E5E5E5;
+    height: 53.5px;
+    background: white;
 }
 
 .navigation {
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-left: 31px;
+
+    &__element {
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+        &:nth-child(2) {
+            margin-left: 52px;
+        }
+    }
+
+    &__logo {
+        padding-top: 15px;
+    }
+
+    &__form {
+        display: inline-block;
+        margin-top: 10px;
+        width: 441px;
+        height: 30px;
+    }
+
+    &__input {
+        width: 377px;
+        height: inherit;
+        padding-left: 7px;
+        border: none;
+        border-radius: 3px;
+        background-color: #ffffff;
+        outline: none;
+        color: #c4c4c4;
+        vertical-align: middle;
+        -webkit-box-shadow: 0px 2px 4px -1px rgba(215, 215, 215, 0.75);
+        -moz-box-shadow: 0px 2px 4px -1px rgba(215, 215, 215, 0.75);
+        box-shadow: 0px 2px 4px -1px rgba(215, 215, 215, 0.75);
+        margin-top: -2px;
+        &:-moz-placeholder {
+            color: #e0e0e0;
+        }
+        &:-ms-input-placeholder {
+            color: #e0e0e0;
+        }
+        &::-webkit-input-placeholder {
+            color: #e0e0e0;
+        }
+        &:focus {
+            border: 1px solid #1c8eed;
+            color: #000000;
+        }
+    }
+
+    &__button {
+        width: 60px;
+        height: 28px;
+        background-image: url("../img/button.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: 2px;
+        border: none;
+        vertical-align: middle;
+        margin-left: -4px;
+        margin-top: -1px;
+        outline: none;
+        &__img {
+            margin-top: 6px;
+        }
+    }
+
+    &__all-button {
+        margin-left: 2px;
+    }
 }
+
