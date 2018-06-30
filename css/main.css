@@ -100,10 +100,11 @@ header {
   .navigation__form {
     display: inline-block;
     margin-top: 10px;
-    width: 441px;
-    height: 30px; }
+    width: 437px;
+    height: 30px;
+    position: relative; }
   .navigation__input {
-    width: 377px;
+    width: 100%;
     height: inherit;
     padding-left: 7px;
     border: none;
@@ -128,14 +129,15 @@ header {
   .navigation__button {
     width: 60px;
     height: 28px;
+    position: absolute;
+    right: 0;
+    top: -1px;
     background-image: url("../img/button.png");
     background-size: cover;
     background-position: center;
     border-radius: 2px;
     border: none;
     vertical-align: middle;
-    margin-left: -4px;
-    margin-top: -1px;
     outline: none; }
     .navigation__button__img {
       margin-top: 6px; }
