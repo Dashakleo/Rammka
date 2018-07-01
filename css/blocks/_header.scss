@@ -62,9 +62,8 @@ header {
         outline: none;
         color: #c4c4c4;
         vertical-align: middle;
-        -webkit-box-shadow: 0px 2px 4px -1px rgba(215, 215, 215, 0.75);
-        -moz-box-shadow: 0px 2px 4px -1px rgba(215, 215, 215, 0.75);
-        box-shadow: 0px 2px 4px -1px rgba(215, 215, 215, 0.75);
+        -webkit-box-shadow: 0px 9px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0px 9px 27px rgba(0, 0, 0, 0.05);
         margin-top: -2px;
         &:-moz-placeholder {
             color: #e0e0e0;
