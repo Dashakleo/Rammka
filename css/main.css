@@ -143,6 +143,54 @@ header {
       margin-top: 6px; }
   .navigation__all-button {
     margin-left: 2px; }
+  .navigation__links {
+    display: flex;
+    justify-content: space-between;
+    width: 253px;
+    font-size: 14px;
+    color: #484848;
+    padding-top: 14px;
+    padding-left: 26px; }
+  .navigation__action {
+    width: 210px;
+    margin-left: 65px;
+    padding-top: 5px; }
+  .navigation__add, .navigation__menu, .navigation__portfolio, .navigation__profile {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none; }
+  .navigation__add {
+    background-image: url("../img/button-add.png");
+    margin-right: 17px;
+    width: 34px;
+    height: 34px;
+    background-size: cover;
+    margin-left: 8px; }
+  .navigation__menu, .navigation__portfolio {
+    width: 33px;
+    height: 33px;
+    background-size: cover;
+    margin-left: 10px; }
+  .navigation__menu {
+    background-image: url("../img/button-menu.png"); }
+  .navigation__portfolio {
+    background-image: url("../img/button-portfolio.png"); }
+  .navigation__profile {
+    background-image: url("../img/button-profile.png");
+    width: 37px;
+    height: 37px;
+    background-size: cover;
+    margin-left: 10px;
+    position: relative;
+    top: 2px;
+    right: 1px; }
+  .navigation__profile::after {
+    content: url("../img/unread.png");
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    position: absolute;
+    left: 25px;
+    top: -5px; }
 
 .picture {
   height: 1000px; }
