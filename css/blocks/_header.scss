@@ -102,5 +102,75 @@ header {
     &__all-button {
         margin-left: 2px;
     }
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      width: 253px;
+      font-size: 14px;
+      color: #484848;
+      padding-top: 14px;
+      padding-left: 26px;
+    }
+
+    &__action {
+      width: 210px;
+      margin-left: 65px;
+      padding-top: 5px;
+      
+    }
+
+    &__add, &__menu, &__portfolio, &__profile {
+      background-color: rgba($color: #000000, $alpha: 0.0);
+      border-style: none;
+    }
+
+    
+
+    &__add {
+      background-image: url("../img/button-add.png");
+      margin-right: 17px;
+      width: 34px;
+      height: 34px;
+      background-size: cover;
+      margin-left: 8px;
+    }
+
+    &__menu, &__portfolio {
+      width: 33px;
+      height: 33px;
+      background-size: cover;
+      margin-left: 10px;
+    }
+
+    &__menu {
+      background-image: url("../img/button-menu.png");
+    }
+
+    &__portfolio {
+      background-image: url("../img/button-portfolio.png");
+    }
+
+    &__profile {
+      background-image: url("../img/button-profile.png");
+      width: 37px;
+      height: 37px;
+      background-size: cover;
+      margin-left: 10px;
+      position: relative;
+      top: 2px;
+      right: 1px;
+
+    }
+
+    &__profile::after {
+      content: url("../img/unread.png");
+      display: inline-block;
+      height: 9px;
+      width: 9px;
+      position: absolute;
+      left: 25px;
+      top: -5px;
+    }
 }
 
