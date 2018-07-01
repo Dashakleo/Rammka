@@ -23,8 +23,10 @@ h1, h2, h3, h4, h5 {
 
 a {
   text-decoration: none;
-  color: black;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #484848; }
+  a:visited {
+    color: #484848; }
 
 .clearfix:after {
   content: '';
@@ -60,7 +62,7 @@ button {
 
 header {
   border-bottom: 1px solid #E5E5E5;
-  height: 53.5px;
+  height: 55px;
   background: white; }
 
 .navigation {
@@ -99,7 +101,7 @@ header {
     padding-top: 15px; }
   .navigation__form {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 12px;
     width: 437px;
     height: 30px;
     position: relative; }
@@ -130,7 +132,7 @@ header {
     width: 60px;
     height: 28px;
     position: absolute;
-    right: 0;
+    right: 1px;
     top: -1px;
     background-image: url("../img/button.png");
     background-size: cover;
@@ -142,7 +144,7 @@ header {
     .navigation__button__img {
       margin-top: 6px; }
   .navigation__all-button {
-    margin-left: 2px; }
+    margin-left: 5px; }
   .navigation__links {
     display: flex;
     justify-content: space-between;
@@ -150,7 +152,7 @@ header {
     font-size: 14px;
     color: #484848;
     padding-top: 14px;
-    padding-left: 26px; }
+    padding-left: 27px; }
   .navigation__action {
     width: 210px;
     margin-left: 65px;

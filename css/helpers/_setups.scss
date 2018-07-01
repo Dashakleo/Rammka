@@ -27,8 +27,11 @@ h1,h2,h3,h4,h5{
 
 a {
   text-decoration: none;
-  color: black;
   cursor: pointer;
+  color: #484848;
+  &:visited {
+    color: #484848;
+  }
 }
 
 .clearfix:after {
