@@ -1,6 +1,5 @@
 header {
     border-bottom: 1px solid #E5E5E5;
-    height: 55px;
     background: white;
 }
 
@@ -8,6 +7,7 @@ header {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    height: 55px;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
