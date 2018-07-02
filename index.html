@@ -48,10 +48,141 @@
 
         <section class="picture">
             <div class="container">
-                <div class="picture__back"></div>
+                <div class="picture__back">
+                  <div class="picture__back-img"></div>
+                  <a href="#" alt="Назад">Вернуться ко всем картинам</a>
+                </div>
                 <div class="picture__img-block">
                     <div class="picture__slider"></div>
-                    <div class="picture__description"></div>
+                    <div class="picture__description">
+
+                      <div class="picture__name">
+                        <h1>Демон сидящий</h1>
+                      </div>
+                      <div class="picture__char">
+                        <span class="picture__artist">Автор: Николай Воскресенский</span>
+                        <h4 class="picture__canvas">Ширина: 30 см. х Длина: 40 см. <br> Материалы: Холст, Масло.</h4>
+                      </div>
+            
+                      <div class="picture__user-options">
+                        <div class="picture__buy-info">
+                          <span class="picture__original-price">300 000<span class="picture__buyer-currency">руб.</span></span>
+                          <button class="picture__btn picture__buy-btn">Купить оригинал</button>  
+                        </div>
+                        <div class="picture__copy-info">
+                          <span class="picture__copy-size">Размер электронной копии: <br>5458 х 3639 пикселей</span>
+                          <button href=".picture__copy-dialog-buy" class="picture__btn picture__copy-dnlw-btn">Скачать копию</button>
+            
+                          <div class="picture__copy-dialog hidden">
+                            <form class="picture__copy-dialog-buy">
+                              <div class="picture__dialog-upper-links">
+                                <a href="index.html" class="picture__dialog-back"><img src="img/main/arrow-left.svg">Вернуться к картине</a>
+                                <a href=".picture__copy-dialog-buy-package" class="picture__dialog-buy-pack">Приобрести наборы картин</a>
+                              </div>
+                              <div class="picture__copy-purchase-options">
+                                <div class="picture__copy-single-purchase">
+                                  <span> 
+                                    <span class="picture__copy-price">170</span> 
+                                    <br>
+                                    <span class="picture__copy-currency">Рублей</span>
+                                    <br><br>
+                                    <span class="picture__copy-item-number">1 Картина</span>
+                                  </span>
+                                  <button>Купить</button>
+                                </div>
+                                <div class="picture__copy-purchase-plan">
+                                  <span> 
+                                    <span class="picture__plan-id">Мой пакет</span> 
+                                    <br><br><br><br> 
+                                    <span class="picture__plan-left">Осталось скачать 8 из 10</span>
+                                  </span>
+                                  <button>Скачать</button>
+                                </div>
+                              </div>  
+                            </form>
+            
+                            <form class="picture__copy-dialog-buy-package">
+                              <div class="picture__dialog-upper-links">
+                                  <a href="index.html" class="picture__dialog-back"><img src="img/main/arrow-left.svg">Вернуться к картине</a>
+                                <span>Скачивая картины на нашем сайте, вы поддерживаете художника!</span>
+                              </div>
+                              <div class="picture__package-options"> 
+                                <div class="picture__package-option-1">
+                                  
+                                  <div class="picture__package-option-offer">
+                                    <span class="picture__copy-price">170</span> 
+                                    <br>
+                                    <span class="picture__copy-currency">Рублей</span>
+                                    <br><br>
+                                    <span class="picture__copy-item-number">1 Картина</span>
+                                  </div>
+                                  <button>Купить</button>
+                                </div>
+                                <div class="picture__package-option-2">
+                                  <span>
+                                    <span class="picture__copy-price">1500</span> 
+                                    <br>
+                                    <span class="picture__copy-currency">Рублей</span>
+                                    <br><br>
+                                    <span class="picture__copy-item-number">10 Картин</span>
+                                  </span>
+                                  <button>Купить</button>
+                                </div>
+                                <div class="picture__package-option-3">
+                                  <span>
+                                    <span class="picture__copy-price">2700</span> 
+                                    <br>
+                                    <span class="picture__copy-currency">Рублей</span>
+                                    <br><br>
+                                    <span class="picture__copy-item-number">20 Картин</span>
+                                  </span>
+                                  <button>Купить</button>
+                                </div>
+                              </div>   
+                            </form>
+                          </div>
+            
+                        </div>
+                        <div class="picture__collection-info">
+                          <div class="picture__collection-added-times">
+                            <div class="picture__collection-added-times-img"></div>
+                            <span>Добавлена 5 раз</span>
+                          </div>
+                          <button href=".picture__collection-dialog-options" class="picture__btn picture__collection-add-btn">Добавить в коллекцию</button>
+            
+                          <div class="picture__collection-dialog hidden">
+                            <form class="picture__collection-dialog-options ">
+                              <div class="picture__dialog-upper-links">
+                                  <a href="index.html" class="picture__dialog-back"><img src="img/main/arrow-left.svg">Вернуться к картине</a>
+                                <a href="#" class="picture__add-folder">Создать новую папку</a>
+                              </div>
+                              <div class="picture__scrollbar-inner">
+                                <div class="picture__collection-options">   
+                                  <div class="picture__collection-option-1">
+                                    <span>Избранное</span>
+                                    <img src="img/main/globe.svg">
+                                    <button>Сохранить</button>
+                                  </div>
+                                  <div class="picture__collection-option-2">
+                                    <span>Моя мастерская</span>
+                                    <img src="img/main/lock.svg">
+                                    <button>Сохранить</button>
+                                  </div>
+                                  <div class="picture__collection-option-3">
+                                    <span>Интересные</span>
+                                    <img src="img/main/globe.svg">
+                                    <button>Сохранить</button>
+                                  </div>
+                                </div>
+                              </div>  
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+
+                    </div>
                 </div>
                 <div class="picture__info"></div>
             </div>
