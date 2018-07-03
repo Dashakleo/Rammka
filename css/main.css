@@ -45,7 +45,7 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 36px; }
+  font-size: 26px; }
 
 h3 {
   color: #484848;
@@ -193,7 +193,6 @@ header {
     top: -5px; }
 
 .picture {
-  height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +204,8 @@ header {
   align-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-bottom: 78px; }
 
 .picture__back {
   font-size: 12px;
@@ -319,7 +319,107 @@ header {
   font-size: 0.84em;
   letter-spacing: -0.03em; }
 
+.picture__info {
+  margin-top: 16px;
+  padding: 0 50px; }
+
+.picture__owner {
+  color: #A1A1A1;
+  margin-top: 13px;
+  margin-bottom: 21px;
+  font-size: 20px;
+  line-height: 30px; }
+
+.picture__year {
+  font-size: 20px;
+  line-height: 30px;
+  color: #A1A1A1;
+  margin-top: -2px; }
+
 .hidden {
   display: none; }
+
+.similar {
+  padding: 0 35px 0 45px; }
+
+.teg {
+  margin-top: 23px;
+  display: flex; }
+
+.teg__item {
+  border-radius: 2px;
+  background: #808080;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px; }
+
+.teg__delete {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+  background: url("../img/cancel.png") no-repeat center center/cover; }
+
+.galery {
+  margin-top: 23px; }
+
+.grid {
+  max-width: 1200px; }
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.item-new__round {
+  text-align: center;
+  padding-top: 28px;
+  width: 85px;
+  height: 85px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  font-size: 46px;
+  color: #000000;
+  font-weight: 100;
+  margin: 49px auto 24px auto; }
+
+.item-new__link {
+  color: #1C8EED; }
+  .item-new__link:hover {
+    color: #0335ed; }
+  .item-new__link:visited {
+    color: #1C8EED; }
+
+.grid__item {
+  float: left;
+  height: 290px;
+  width: 214px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: no-repeat center center/cover; }
+  .grid__item-new {
+    border: 1px dashed #C7C7C7;
+    text-align: center;
+    font-size: 14px;
+    line-height: 23px; }
+  .grid__item-height238 {
+    height: 238px; }
+  .grid__item-height253 {
+    height: 253px; }
+  .grid__item-height261 {
+    height: 261px; }
+  .grid__item-height301 {
+    height: 301px; }
+  .grid__item-height310 {
+    height: 310px; }
+  .grid__item-height350 {
+    height: 350px; }
+  .grid__item-height358 {
+    height: 358px; }
+  .grid__item-height373 {
+    height: 373px; }
 
 /*# sourceMappingURL=main.css.map */
