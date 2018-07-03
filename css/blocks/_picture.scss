@@ -1,4 +1,4 @@
-.picture{
+.picture {
   height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,7 +12,232 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
+
 }
+
+//----------slider---------------
+
+.picture__slider-container {
+      position: relative;
+}
+
+.picture__slide {
+    background-color: #ffffff;
+    width: 647px;
+    height: 420px;
+    display: none;
+    &_fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+}
+
+.picture__full-size {
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+}
+
+.picture__slider__button {
+    position: absolute;
+    top: 45.5%;
+    padding: 4.2px 10px;
+    background-color: rgba(0, 0, 0, 0.59);
+    border-radius: 19px;
+    vertical-align: middle;
+    &_next {
+        right: 20px;
+    }
+    &_prev {
+        left: 30px;
+    }
+    &_prev img {
+        transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.picture__slider__view-style-wrap {
+    position: absolute;
+    bottom: 14px;
+    left: 40px;
+}
+
+.picture__slider__view-style {
+    width: 165px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .2);
+    margin-left: 21px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #FFF9F9;
+    padding-top: 2px;
+    border: none;
+    &:nth-child(2) {
+        padding-left: 3px;
+    }
+    &:nth-child(3) {
+        margin-left: 13px !important;
+    }
+}
+
+.active-dot, .picture__slider__view-style:hover {
+    border-color: rgba(0, 0, 0, .62);
+    background-color: rgba(0, 0, 0, .62);
+}
+
+.picture__slide__pc {
+    position: absolute;
+    top: 44px;
+    left: 65px;
+}
+
+.picture__slide__phone {
+    position: absolute;
+    top: 68px;
+    right: 33px;
+}
+
+.picture__slide__info {
+    font-size: 9px;
+    color: #A1A1A1;
+}
+
+.picture__slide__info_device {
+    position: absolute;
+    top: 20px;
+    left: 66px;
+}
+
+.picture__slide__picture-in-interior {
+    position: absolute;
+    top: 99px;
+    left: 231px;
+    z-index: 10;
+}
+
+.picture__slide__background-second-img, .picture__slide__background-img {
+    display: block;
+}
+
+.picture__slide__background-second-img {
+    margin-top: -8px;
+}
+
+.picture__slide__info_interior {
+    position: relative;
+    z-index: 20;
+    font-size: 7px;
+    background-color: transparent;
+    top: 15px;
+    left: 15px;
+}
+
+.picture__slider-info {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 17px;
+    &__element {
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+        &:nth-child(2) {
+            margin-left: 364px;
+            width: 50px;
+            height: auto;
+        }
+        &:nth-child(3) {
+            margin-top: -3px;
+        }
+    }
+}
+
+.picture__views {
+    color: #828282;
+}
+
+.picture__likes {
+    position: relative;
+}
+
+.picture__likes__like , .picture__likes__dislike {
+    position: absolute;
+}
+
+.picture__likes__like {
+    top:-4px;
+    left: -65px;
+    & span {
+        position: absolute;
+        top: 4px;
+        left: 22px;
+    }
+}
+
+.picture__likes__dislike {
+    right: 54px;
+    top: -2px;
+    & span {
+        position: absolute;
+        top: 1px;
+        left: 24px;
+        color: #828282;
+    }
+}
+
+.picture__share__button {
+    color: #4F4F4F;
+    font-size: 14px;
+    position: relative;
+    margin-left: 31px;
+    &:before {
+        content: url("../img/redo.png");
+        position: absolute;
+        right: 84px;
+        top: -2px;
+    }
+}
+
+.picture__published {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #A1A1A1;
+}
+//--------end of slider----------
 
     .picture__back {
       font-size: 12px;
