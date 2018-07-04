@@ -21,14 +21,15 @@
   display: flex;
   align-items: flex-start;
   width: 200px;
-}
 
-.picture__back-img {
-  width: 5px;
-  height: 10px;
-  background-image: url("../img/arrow-left.png");
-  margin-right: 10px;
-  margin-top: 2px;
+  &-img {
+    width: 5px;
+    height: 10px;
+    background-image: url("../img/arrow-left.png");
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+  
 }
 
 .picture__img-block {
@@ -42,55 +43,55 @@
   margin-left: 50px;
 }
 
-.picture__description {
+.description {
   width: 461px;
   margin-left: 27px;
 }
 
-.picture__name {
+.description__name {
   margin-bottom: 3px;
 }
 
-.picture__artist {
+.description__artist {
   font-weight: 100;
   color: #949494;
   font-size: 14px;
 }
 
-.picture__canvas {
+.description__canvas {
   margin-top: 13px;
   line-height: 17px;
 }
 
-.picture__user-options {
+.description__user-options {
   display: flex;
   flex-direction: column;
   margin-top: 51px;
   margin-right: 20px;
 }
 
-.picture__buy-info, .picture__copy-info, .picture__collection-info {
+.description__buy-info, .description__copy-info, .description__collection-info {
   display: flex;
   justify-content: space-between;
 }
 
-.picture__buy-info {
+.description__buy-info {
   margin-bottom: 16px;
 }
 
-.picture__original-price {
+.description__original-price {
   font-size: 35px;
   font-weight: 300;
   width: 180px;
 }
 
-.picture__buyer-currency {
+.description__buyer-currency {
   font-size: 16px;
   font-weight: 200;
   padding-left: 5px;
 }
 
-.picture__copy-size {
+.description__copy-size {
   width: 180px;
   text-align: left;
   font-size: 10px;
@@ -99,32 +100,38 @@
   line-height: 12px;
 }
 
-.picture__collection-info {
-  margin-top: 58px;
 
+.description__collection {
+
+    &-info {
+    margin-top: 58px;
+
+    }
+
+    &-added-times {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 16px;
+    margin-left: 12px;
+    width: 180px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 15px;
+    color: #828282;
+    }
+
+    &-added-times-img {
+    background-image: url("../img/stock.png");
+    width: 15px;
+    height: 13px;
+    margin-right: 7px;
+    }
 }
 
-.picture__collection-added-times {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding-top: 16px;
-  margin-left: 12px;
-  width: 180px;
-  font-weight: 300;
-  font-size: 11px;
-  line-height: 15px;
-  color: #828282;
-}
 
-.picture__collection-added-times-img {
-  background-image: url("../img/stock.png");
-  width: 15px;
-  height: 13px;
-  margin-right: 7px;
-}
 
-.picture__btn {
+.description__btn {
   width: 222px;
   height: 40px;
   border-radius: 5px;
@@ -136,16 +143,18 @@
   border: solid 1px;
 }
 
-.picture__buy-btn {
+.description__btn-buy {
   background-color: #0951AF;
   border-color: #0951AF;
   color: #fff;
 }
 
-.picture__collection-add-btn {
+.description__collection-btn-add {
   font-size: 0.84em;
   letter-spacing: -0.03em;
 }
+
+
 //* picture__info *//
 
 .picture__info {
