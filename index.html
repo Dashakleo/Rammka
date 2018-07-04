@@ -54,7 +54,65 @@
             <a href="#" alt="Назад">Вернуться ко всем картинам</a>
         </div>
         <div class="picture__img-block">
-            <div class="picture__slider"></div>
+            <div class="picture__slider">
+                <div class="picture__slider-container">
+                    <div class="picture__slide picture__slide_fade">
+                        <img src="img/slide1.jpg" alt="demon">
+                        <a class="picture__full-size">
+                            <img src="img/full-size.png">
+                        </a>
+                    </div>
+                    <div class="picture__slide picture__slide_fade">
+                        <div class="picture__slide__info picture__slide__info_device">* пример как можно использовать цифровую копию на ваших устройствах</div>
+                        <img class="picture__slide__pc" src="img/slide2_1.png">
+                        <img class="picture__slide__phone" src="img/slide2_2.png">
+                    </div>
+                    <div class="picture__slide picture__slide_fade">
+                        <div class="picture__slide__info picture__slide__info_interior">* пример как выглядит картина в интерьере</div>
+                        <img class="picture__slide__background-second-img" src="img/slide3_second-bg.jpg">
+                        <img class="picture__slide__background-img" src="img/slide3_1.jpg">
+                        <img class="picture__slide__picture-in-interior" src="img/slide3_2.jpg">
+                    </div>
+                    <button class="picture__slider__button picture__slider__button_prev" onclick="plusSlides(-1)">
+                        <img src="img/slider-arrow.png">
+                    </button>
+                    <button class="picture__slider__button picture__slider__button_next" onclick="plusSlides(1)">
+                        <img src="img/slider-arrow.png">
+                    </button>
+                    <div class="picture__slider__view-style-wrap">
+                        <button class="picture__slider__view-style" onclick="currentSlide(1)">Оригинал</button>
+                        <button class="picture__slider__view-style" onclick="currentSlide(2)">На устройствах</button>
+                        <button class="picture__slider__view-style" onclick="currentSlide(3)">В интерьере</button>
+                    </div>
+                </div>
+                <div class="picture__slider-info">
+                    <div class="picture__slider-info__element">
+                        <div class="picture__views">999 просмотров</div>
+                    </div>
+                    <div class="picture__slider-info__element">
+                        <div class="picture__likes">
+                            <div class="picture__likes__like">
+                                <a class="picture__likes__like-image">
+                                    <img src="img/like.png">
+                                </a>
+                                <span>1</span>
+                            </div>
+                            <div class="picture__likes__dislike">
+                                <a class="picture__likes__dislike-image">
+                                    <img src="img/dislike.png">
+                                </a>
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="picture__slider-info__element">
+                        <div class="picture__share">
+                            <a class="picture__share__button">Поделиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture__published">Опубликованно: 19.04.2018</div>
+            </div>
             <div class="picture__description">
 
                 <div class="picture__name">
@@ -65,7 +123,6 @@
                     <h4 class="picture__canvas">Ширина: 30 см. х Длина: 40 см. <br> Материалы: Холст, Масло.
                     </h4>
                 </div>
-
                 <div class="picture__user-options">
                     <div class="picture__buy-info">
                                 <span class="picture__original-price">300 000<span
@@ -256,7 +313,9 @@
         </div>
     </div>
 </section>
+
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" ></script>
 <script src="./js/grid.js" ></script>
+<script src="js/slider.js"></script>
 </body>
 </html>
