@@ -127,7 +127,7 @@ header {
     
 
     &__add {
-      background-image: url("../img/button-add.png");
+      background-image: url("../img/button-add.svg");
       margin-right: 17px;
       width: 34px;
       height: 34px;
@@ -143,15 +143,15 @@ header {
     }
 
     &__menu {
-      background-image: url("../img/button-menu.png");
+      background-image: url("../img/button-menu.svg");
     }
 
     &__portfolio {
-      background-image: url("../img/button-portfolio.png");
+      background-image: url("../img/button-portfolio.svg");
     }
 
     &__profile {
-      background-image: url("../img/button-profile.png");
+      background-image: url("../img/button-profile.svg");
       width: 37px;
       height: 37px;
       background-size: cover;
@@ -163,13 +163,15 @@ header {
     }
 
     &__profile::after {
-      content: url("../img/unread.png");
+      content: "";
+      background-color: red;
+      border-radius: 50%;
       display: inline-block;
       height: 9px;
       width: 9px;
       position: absolute;
       left: 25px;
-      top: -5px;
+      top: 1px;
     }
 }
 
