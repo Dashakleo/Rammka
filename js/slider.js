@@ -14,8 +14,8 @@ currentSlide = n => {
 
 showSlides = n => {
     let i;
-    slides = document.getElementsByClassName("picture__slide");
-    dots = document.getElementsByClassName("picture__slider__view-style");
+    slides = document.getElementsByClassName("slider__slide");
+    dots = document.getElementsByClassName("slider__view-style");
 
     if (n > slides.length) {
         slideIndex = 1

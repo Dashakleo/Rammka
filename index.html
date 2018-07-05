@@ -24,7 +24,7 @@
             <div class="navigation__element">
                 <form class="navigation__form">
                     <input class="navigation__input" placeholder="Поиск">
-                    <button class="navigation__button"><img class="navigation__button__img" src="img/loupe.svg">
+                    <button class="navigation__button" onclick="return false"><img class="navigation__button__img" src="img/loupe.svg">
                     </button>
                 </form>
                 <a href="#" class="navigation__all-button"><img src="img/arrow_down.svg"></a>
@@ -55,64 +55,64 @@
             <a href="#" alt="Назад">Вернуться ко всем картинам</a>
         </div>
         <div class="picture__img-block">
-            <div class="picture__slider">
-                <div class="picture__slider-container">
-                    <div class="picture__slide picture__slide_fade">
+            <div class="slider">
+                <div class="slider-container">
+                    <div class="slider__slide slider__slide_fade">
                         <img src="img/slide1.jpg" alt="demon">
-                        <a class="picture__full-size">
+                        <a class="slider__full-size">
                             <img src="img/full-size.svg">
                         </a>
                     </div>
-                    <div class="picture__slide picture__slide_fade">
-                        <div class="picture__slide__info picture__slide__info_device">* пример как можно использовать цифровую копию на ваших устройствах</div>
-                        <img class="picture__slide__pc" src="img/slide2_1.png">
-                        <img class="picture__slide__phone" src="img/slide2_2.png">
+                    <div class="slider__slide slider__slide_fade">
+                        <div class="slider__info picture__slide__info_device">* пример как можно использовать цифровую копию на ваших устройствах</div>
+                        <img class="slider__pc" src="img/slide2_1.png">
+                        <img class="slider__phone" src="img/slide2_2.png">
                     </div>
-                    <div class="picture__slide picture__slide_fade">
-                        <div class="picture__slide__info picture__slide__info_interior">* пример как выглядит картина в интерьере</div>
-                        <img class="picture__slide__background-second-img" src="img/slide3_second-bg.jpg">
-                        <img class="picture__slide__background-img" src="img/slide3_1.jpg">
-                        <img class="picture__slide__picture-in-interior" src="img/slide3_2.jpg">
+                    <div class="slider__slide slider__slide_fade">
+                        <div class="slider__info slider__info_interior">* пример как выглядит картина в интерьере</div>
+                        <img class="slider__background-second-img" src="img/slide3_second-bg.jpg">
+                        <img class="slider__background-img" src="img/slide3_1.jpg">
+                        <img class="slider__picture-in-interior" src="img/slide3_2.jpg">
                     </div>
-                    <button class="picture__slider__button picture__slider__button_prev" onclick="plusSlides(-1)">
+                    <button class="slider__button slider__button_prev" onclick="plusSlides(-1)">
                         <img src="img/slider-arrow.svg">
                     </button>
-                    <button class="picture__slider__button picture__slider__button_next" onclick="plusSlides(1)">
+                    <button class="slider__button slider__button_next" onclick="plusSlides(1)">
                         <img src="img/slider-arrow.svg">
                     </button>
-                    <div class="picture__slider__view-style-wrap">
-                        <button class="picture__slider__view-style" onclick="currentSlide(1)">Оригинал</button>
-                        <button class="picture__slider__view-style" onclick="currentSlide(2)">На устройствах</button>
-                        <button class="picture__slider__view-style" onclick="currentSlide(3)">В интерьере</button>
+                    <div class="slider__view-style-wrap">
+                        <button class="slider__view-style" onclick="currentSlide(1)">Оригинал</button>
+                        <button class="slider__view-style" onclick="currentSlide(2)">На устройствах</button>
+                        <button class="slider__view-style" onclick="currentSlide(3)">В интерьере</button>
                     </div>
                 </div>
-                <div class="picture__slider-info">
-                    <div class="picture__slider-info__element">
-                        <div class="picture__views">999 просмотров</div>
+                <div class="slider-info">
+                    <div class="slider-info__element">
+                        <div class="slider-info__views">999 просмотров</div>
                     </div>
-                    <div class="picture__slider-info__element">
-                        <div class="picture__likes">
-                            <div class="picture__likes__like">
-                                <a class="picture__likes__like-image">
+                    <div class="slider-info__element">
+                        <div class="slider-info__likes">
+                            <div class="slider-info__like">
+                                <a class="slider-info__like-image">
                                     <img src="img/like.svg">
                                 </a>
                                 <span>1</span>
                             </div>
-                            <div class="picture__likes__dislike">
-                                <a class="picture__likes__dislike-image">
+                            <div class="slider-info__dislike">
+                                <a class="slider-info__dislike-image">
                                     <img src="img/dislike.svg">
                                 </a>
                                 <span>0</span>
                             </div>
                         </div>
                     </div>
-                    <div class="picture__slider-info__element">
-                        <div class="picture__share">
-                            <a class="picture__share__button">Поделиться</a>
+                    <div class="slider-info__element">
+                        <div class="slider-info__share">
+                            <a class="slider-info__share-button">Поделиться</a>
                         </div>
                     </div>
                 </div>
-                <div class="picture__published">Опубликованно: 19.04.2018</div>
+                <div class="slider__published">Опубликованно: 19.04.2018</div>
             </div>
             <div class="picture__description">
 
@@ -233,7 +233,7 @@
                                     <a href="#" class="picture__add-folder">Создать новую папку</a>
                                 </div>
                                 <div class="picture__scrollbar-inner">
-                                    <div class="picture__collection-options">
+                                    <div class="picture__collection-options" id="scroll-bar">
                                         <div class="picture__collection-option">
                                             <span class="picture__collection-section">Избранное</span>
                                             <div class="picture__collection-img picture__collection-img-globe"></div>
