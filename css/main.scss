@@ -1,6 +1,8 @@
 $blue: #0951AF;
+$placeholder-input: #e0e0e0;
 
 @import 'helpers/_setups';
+@import 'helpers/_extends';
 @import 'blocks/_header';
 @import 'blocks/_picture';
 @import 'blocks/_popup';
