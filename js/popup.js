@@ -1,11 +1,10 @@
-const   save_copy = document.querySelector('.picture__copy-dnlw-btn'),
-        plan_choose = document.querySelector('.picture__popup-link-pack'),
-        add_to_collect = document.querySelector('.picture__collection-add-btn'),
+const   save_copy = document.querySelector('.description__copy-dnlw-btn'),
+        plan_choose = document.querySelector('.copy-popup__link-pack'),
+        add_to_collect = document.querySelector('.description__collection-btn-add'),
         overlay = document.querySelector('.overlay'),
-        popup_copy = document.querySelector('.picture__popup-copy'),
-        popup_plan = document.querySelector('.picture__popup-package'),
-        popup_add = document.querySelector('.picture__popup-collection'),
-        popup_buy_close = document.querySelector('.picture__popup-link-back');
+        popup_copy = document.querySelector('.description__copy-popup'),
+        popup_plan = document.querySelector('.description__package-popup'),
+        popup_add = document.querySelector('.description__collection-popup');
 
 let fadeIn = (element) => {
     overlay.classList.add('visible');
@@ -25,4 +24,3 @@ add_to_collect.addEventListener('click', fadeIn.bind(null, popup_add));
 overlay.addEventListener('click', fadeOut.bind(null, popup_copy));
 overlay.addEventListener('click', fadeOut.bind(null,popup_plan));
 overlay.addEventListener('click', fadeOut.bind(null, popup_add));
-popup_buy_close.addEventListener('click', fadeOut.bind(null, popup_copy));
