@@ -12,147 +12,156 @@
   -ms-flex-align: start;
   align-items: flex-start;
   margin-bottom: 78px;
+
+    &__back {
+    font-size: 12px;
+    margin: 19px 40px 18px;
+    padding-right: 10px;
+    display: flex;
+    align-items: flex-start;
+    width: 200px;
+
+        &-img {
+            width: 5px;
+            height: 10px;
+            background-image: url("../img/arrow-left.png");
+            margin-right: 10px;
+            margin-top: 2px;
+        }
+    
+    }
+
+    &__img-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    }
+
+    &__slider {
+    width: 647px;
+    margin-left: 50px;
+    }
+
 }
 
-.picture__back {
-  font-size: 12px;
-  margin: 19px 40px 18px;
-  padding-right: 10px;
-  display: flex;
-  align-items: flex-start;
-  width: 200px;
 
-  &-img {
-    width: 5px;
-    height: 10px;
-    background-image: url("../img/arrow-left.png");
-    margin-right: 10px;
-    margin-top: 2px;
-  }
-  
-}
-
-.picture__img-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.picture__slider {
-  width: 647px;
-  margin-left: 50px;
-}
 
 .description {
   width: 461px;
   margin-left: 27px;
-}
 
-.description__name {
-  margin-bottom: 3px;
-}
-
-.description__artist {
-  font-weight: 100;
-  color: #949494;
-  font-size: 14px;
-}
-
-.description__canvas {
-  margin-top: 13px;
-  line-height: 17px;
-}
-
-.description__user-options {
-  display: flex;
-  flex-direction: column;
-  margin-top: 51px;
-  margin-right: 20px;
-}
-
-.description__buy-info, .description__copy-info, .description__collection-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-.description__buy-info {
-  margin-bottom: 16px;
-}
-
-.description__original-price {
-  font-size: 35px;
-  font-weight: 300;
-  width: 180px;
-}
-
-.description__buyer-currency {
-  font-size: 16px;
-  font-weight: 200;
-  padding-left: 5px;
-}
-
-.description__copy-size {
-  width: 180px;
-  text-align: left;
-  font-size: 10px;
-  padding-top: 9px;
-  color: #484848;
-  line-height: 12px;
-}
-
-
-.description__collection {
-
-    &-info {
-    margin-top: 58px;
-
+    &__name {
+        margin-bottom: 3px;
     }
 
-    &-added-times {
+    &__artist {
+    font-weight: 100;
+    color: #949494;
+    font-size: 14px;
+    }
+
+    &__canvas {
+    margin-top: 13px;
+    line-height: 17px;
+    }
+
+    &__user-options {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding-top: 16px;
-    margin-left: 12px;
-    width: 180px;
+    flex-direction: column;
+    margin-top: 51px;
+    margin-right: 20px;
+    }
+
+    &__buy-info, &__copy-info, &__collection-info {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    &__buy-info {
+    margin-bottom: 16px;
+    }
+
+    &__original-price {
+    font-size: 35px;
     font-weight: 300;
-    font-size: 11px;
-    line-height: 15px;
-    color: #828282;
+    width: 180px;
     }
 
-    &-added-times-img {
-    background-image: url("../img/stock.png");
-    width: 15px;
-    height: 13px;
-    margin-right: 7px;
+    &__buyer-currency {
+    font-size: 16px;
+    font-weight: 200;
+    padding-left: 5px;
     }
+
+    &__copy-size {
+    width: 180px;
+    text-align: left;
+    font-size: 10px;
+    padding-top: 9px;
+    color: #484848;
+    line-height: 12px;
+    }
+
+
+    &__collection {
+
+        &-info {
+        margin-top: 58px;
+
+        }
+
+        &-added-times {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding-top: 16px;
+        margin-left: 12px;
+        width: 180px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 15px;
+        color: #828282;
+        }
+
+        &-added-times-img {
+        background-image: url("../img/stock.png");
+        width: 15px;
+        height: 13px;
+        margin-right: 7px;
+        }
+    }
+
+
+
+    &__btn {
+    width: 222px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 0.1em;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: solid 1px;
+
+        &-buy {
+            background-color: #0951AF;
+            border-color: #0951AF;
+            color: #fff;
+        }
+
+        &-add {
+            font-size: 0.84em;
+            letter-spacing: -0.03em;
+        }
+
+    }
+
+
 }
 
 
 
-.description__btn {
-  width: 222px;
-  height: 40px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 0.1em;
-  text-transform: uppercase;
-  background-color: #fff;
-  border: solid 1px;
-}
-
-.description__btn-buy {
-  background-color: #0951AF;
-  border-color: #0951AF;
-  color: #fff;
-}
-
-.description__collection-btn-add {
-  font-size: 0.84em;
-  letter-spacing: -0.03em;
-}
 
 
 //* picture__info *//
