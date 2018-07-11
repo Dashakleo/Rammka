@@ -5,26 +5,26 @@
 .teg {
   margin-top: 23px;
   display: flex;
-}
 
-.teg__item {
-  border-radius: 2px;
-  background: #808080;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: white;
-  height: 40px;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  margin-right: 5px;
-}
+  &__item {
+    border-radius: 2px;
+    background: #808080;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
 
-.teg__delete {
-  width: 10px;
-  height: 10px;
-  margin-left: 10px;
-  background: url("../img/cancel.svg") no-repeat center center/cover;
+  &__delete {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    background: url("../img/cancel.svg") no-repeat center center/cover;
+  }
 }
 
 .galery {
@@ -38,6 +38,23 @@
     content: '';
     display: block;
     clear: both;
+  }
+
+  &__item {
+    float: left;
+    height: 290px;
+    width: 214px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: no-repeat center center/cover;
+
+    &-new {
+      border: 1px dashed #C7C7C7;
+      text-align: center;
+      font-size: 14px;
+      line-height: 23px;
+
+    }
   }
 }
 
@@ -63,22 +80,3 @@
     color: #1C8EED;
   }
 }
-
-
-.grid__item {
-  float: left;
-  height: 290px;
-  width: 214px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  background: no-repeat center center/cover;
-
-  &-new {
-    border: 1px dashed #C7C7C7;
-    text-align: center;
-    font-size: 14px;
-    line-height: 23px;
-
-  }
-}
-
