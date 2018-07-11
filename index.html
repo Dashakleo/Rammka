@@ -18,16 +18,16 @@
         <div class="navigation">
             <div class="navigation__element">
                 <div class="navigation__logo">
-                    <img src="img/logo.png" class="navigation__logo__image" alt="ramka logo">
+                    <img src="img/logo.svg" class="navigation__logo__image" alt="ramka logo">
                 </div>
             </div>
             <div class="navigation__element">
                 <form class="navigation__form">
                     <input class="navigation__input" placeholder="Поиск">
-                    <button class="navigation__button"><img class="navigation__button__img" src="img/loupe.png">
+                    <button class="navigation__button" onclick="return false"><img class="navigation__button__img" src="img/loupe.svg">
                     </button>
                 </form>
-                <a href="#" class="navigation__all-button"><img src="img/arrow_down.png"></a>
+                <a href="#" class="navigation__all-button"><img src="img/arrow_down.svg"></a>
             </div>
             <div class="navigation__element">
                 <div class="navigation__links">
@@ -55,9 +55,66 @@
             <a href="#" alt="Назад">Вернуться ко всем картинам</a>
         </div>
         <div class="picture__img-block">
-            <div class="picture__slider"></div>
+            <div class="slider">
+                <div class="slider-container">
+                    <div class="slider__slide slider__slide_fade">
+                        <img src="img/slide1.jpg" alt="demon">
+                        <a class="slider__full-size">
+                            <img src="img/full-size.svg">
+                        </a>
+                    </div>
+                    <div class="slider__slide slider__slide_fade">
+                        <div class="slider__info picture__slide__info_device">* пример как можно использовать цифровую копию на ваших устройствах</div>
+                        <img class="slider__pc" src="img/slide2_1.png">
+                        <img class="slider__phone" src="img/slide2_2.png">
+                    </div>
+                    <div class="slider__slide slider__slide_fade">
+                        <div class="slider__info slider__info_interior">* пример как выглядит картина в интерьере</div>
+                        <img class="slider__background-second-img" src="img/slide3_second-bg.jpg">
+                        <img class="slider__background-img" src="img/slide3_1.jpg">
+                        <img class="slider__picture-in-interior" src="img/slide3_2.jpg">
+                    </div>
+                    <button class="slider__button slider__button_prev" onclick="plusSlides(-1)">
+                        <img src="img/slider-arrow.svg">
+                    </button>
+                    <button class="slider__button slider__button_next" onclick="plusSlides(1)">
+                        <img src="img/slider-arrow.svg">
+                    </button>
+                    <div class="slider__view-style-wrap">
+                        <button class="slider__view-style" onclick="currentSlide(1)">Оригинал</button>
+                        <button class="slider__view-style" onclick="currentSlide(2)">На устройствах</button>
+                        <button class="slider__view-style" onclick="currentSlide(3)">В интерьере</button>
+                    </div>
+                </div>
+                <div class="slider-info">
+                    <div class="slider-info__element">
+                        <div class="slider-info__views">999 просмотров</div>
+                    </div>
+                    <div class="slider-info__element">
+                        <div class="slider-info__likes">
+                            <div class="slider-info__like">
+                                <a class="slider-info__like-image">
+                                    <img src="img/like.svg">
+                                </a>
+                                <span>1</span>
+                            </div>
+                            <div class="slider-info__dislike">
+                                <a class="slider-info__dislike-image">
+                                    <img src="img/dislike.svg">
+                                </a>
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-info__element">
+                        <div class="slider-info__share">
+                            <a class="slider-info__share-button">Поделиться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__published">Опубликованно: 19.04.2018</div>
+            </div>
             <div class="description">
-
                 <div class="description__info">
                     <div class="description__name">
                         <h1>Демон сидящий</h1>
@@ -251,26 +308,28 @@
             </div>
             <div class="grid galery">
                 <div class="grid__item " style="background-image: url('./img/galery1.jpg')"></div>
-                <div class="grid__item grid__item-height253" style="background-image: url('./img/galery2.jpg')"></div>
-                <div class="grid__item grid__item-height301" style="background-image: url('./img/galery3.jpg')"></div>
-                <div class="grid__item grid__item-height238" style="background-image: url('./img/galery4.jpg')"></div>
-                <div class="grid__item grid__item-height350" style="background-image: url('./img/galery5.jpg')"></div>
+                <div class="grid__item" style="background-image: url('./img/galery2.jpg'); height: 253px"></div>
+                <div class="grid__item" style="background-image: url('./img/galery3.jpg'); height: 301px"></div>
+                <div class="grid__item" style="background-image: url('./img/galery4.jpg') ; height: 238px"></div>
+                <div class="grid__item" style="background-image: url('./img/galery5.jpg'); height: 350px"></div>
                 <div class="grid__item grid__item-new">
                     <div class="item-new__round"> + </div>
                     Добавьте свою картинку
                     <a href="#" class="item-new__link">выберите файл</a>
                 </div>
-                <div class="grid__item grid__item-height358" style="background-image: url('./img/galery6.jpg')"></div>
-                <div class="grid__item grid__item-height310" style="background-image: url('./img/galery7.jpg')"></div>
-                <div class="grid__item grid__item-height373" style="background-image: url('./img/galery8.jpg')"></div>
-                <div class="grid__item grid__item-height261" style="background-image: url('./img/galery9.jpg')"></div>
+                <div class="grid__item" style="background-image: url('./img/galery6.jpg'); height: 358px"></div>
+                <div class="grid__item" style="background-image: url('./img/galery7.jpg'); height: 310px"></div>
+                <div class="grid__item" style="background-image: url('./img/galery8.jpg'); height: 373px"></div>
+                <div class="grid__item" style="background-image: url('./img/galery9.jpg'); height: 261px"></div>
             </div>
         </div>
     </div>
 </section>
+
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" ></script>
 <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
 <script src="./js/grid.js" ></script>
+<script src="js/slider.js"></script>
 <script src="./js/popup.js"></script>
 <script src="./js/scroll.js"></script>
 </body>

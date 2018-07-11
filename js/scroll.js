@@ -1,1 +1,1 @@
-new SimpleBar(document.querySelector('.picture__scrollbar-inner'), { autoHide: false });
+new SimpleBar(document.getElementById('scroll-bar'), { autoHide: false });

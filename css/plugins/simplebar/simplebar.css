@@ -28,14 +28,14 @@
     min-width: 100%!important;
     max-height: inherit!important;
     -webkit-box-sizing: content-box!important;
-            box-sizing: content-box!important;
+    box-sizing: content-box!important;
 }
 
 .simplebar-content {
     overflow-y: hidden!important;
     overflow-x: scroll;
     -webkit-box-sizing: border-box!important;
-            box-sizing: border-box!important;
+    box-sizing: border-box!important;
     min-height: 100%!important;
 }
 
