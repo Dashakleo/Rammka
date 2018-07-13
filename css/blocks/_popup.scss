@@ -73,7 +73,7 @@
       width: 5px;
       height: 10px;
       margin-top: 2px;
-      background-image: url("../img/arrow-left.png");
+      background-image: url("../img/arrow-left.svg");
     }
     &-link {
       font-size: 12px;
@@ -192,6 +192,11 @@
         color: #FFFFFF;
         border-style: none;
         margin-top: -4px;
+
+        &:hover {
+            background-color: #4279C1;
+            border: solid 1px #4279C1;
+          }
       }
 
     }
@@ -207,6 +212,11 @@
       font-weight: bold;
       color: #FFFFFF;
       border-style: none;
+
+      &:hover {
+        background-color: #4279C1;
+        border: solid 1px #4279C1;
+      }
     }
   }
 }
@@ -225,7 +235,7 @@
       width: 5px;
       height: 10px;
       margin-left: -5px;
-      background-image: url("../img/arrow-left.png");
+      background-image: url("../img/arrow-left.svg");
     }
 
     &-link {
@@ -265,7 +275,7 @@
       width: 5px;
       height: 10px;
       margin-top: 2px;
-      background-image: url("../img/arrow-left.png");
+      background-image: url("../img/arrow-left.svg");
     }
 
     &-link {
@@ -314,6 +324,11 @@
     font-size: 14px;
     color: #F2F2F2;
     border-style: none;
+
+    &:hover {
+        background-color: #4279C1;
+        border: solid 1px #4279C1;
+      }
   }
 
   &__img {
